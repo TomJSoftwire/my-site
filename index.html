@@ -1,66 +1,73 @@
 <head>
-  <title>Tom's travelling site</title>
+    <title>Tom's travelling site</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header><h1>Tom's travelling blog</h1></header>
-  <h2>Countries I have visited</h2>
-  <ul>
-    <li>Cuba - <a href="cuba.html">see more info here!</a></li>
-    <li>Colombia</li>
-    <li>Ecuador</li>
-  </ul>
-  <h2>This is my face</h2>
-  <img src="assets/me.jpg" alt="My lovely face" >
-  <h2>My ranking of the Countries</h2>
-  <table>
-      <th>
-          <td>
-              Country
-          </td>
-          <td>
-              Score
-          </td>
-          <td>
-              Rank
-          </td>
-          <td>
-              Best Pic
-          </td>
-      </th>
-      <tr>
+    <header>
+        <h1>Tom's travelling blog</h1>
+    </header>
+    <div id="body-wrapper">
+        <h2>Countries I have visited</h2>
+        <ul>
+            <li>Cuba - <a href="cuba/index.html">see more info here!</a></li>
+            <li>Colombia</li>
+            <li>Ecuador</li>
+        </ul>
+        <h2>This is my face</h2>
+        <img src="assets/me.jpg" alt="My lovely face">
+        <h2>My ranking of the Countries</h2>
+        <table>
+            <th>
             <td>
-                Cuba
+                Country
             </td>
             <td>
-                9
+                Score
             </td>
             <td>
-                1
+                Rank
             </td>
             <td>
-                <img src="assets/cuba.svg" >
+                Best Pic
             </td>
-      </tr>    
-  </table>
-  <h2>Contact Me!</h2>
-  <p>I love it when strange weirdos from the internet contact me! Put a message in here and I <em>definitely</em> won't get a restraining order on you!</p>
-  <form action="" method="post">
-    <ul>
-        <li>
-            <label for="name">Name:</label>
-            <input type="text" id="name">
-        </li>
-        <li>
-            <label for="mail">Email:</label>
-            <input type="email" id="mail">
-        </li>
-        <li>
-            <label for="msg">What the hell do you want?:</label>
-            <textarea id="msg" name="creeper_message"></textarea>
-        </li>
-        <li>
-            <button type="submit"><del>Burn</del> Send your message!</button>
-        </li>
-    </ul>
-  </form>
+            </th>
+            <tr>
+                <td>
+                    Cuba
+                </td>
+                <td>
+                    9
+                </td>
+                <td>
+                    1
+                </td>
+                <td>
+                    <img src="assets/cuba.svg">
+                </td>
+            </tr>
+        </table>
+        <h2>Contact Me!</h2>
+        <p>I love it when strange weirdos from the internet contact me! Put a message in here and I <em>definitely</em>
+            won't get a restraining order on you!</p>
+        <form action="" method="post">
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                </li>
+                <li>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail">
+                </li>
+                <li>
+                    <label for="msg">What the hell do you want?:</label>
+                    <textarea id="msg" name="creeper_message"></textarea>
+                </li>
+                <li>
+                    <button type="submit"><del>Burn</del> Send your message!</button>
+                </li>
+            </ul>
+        </form>
+    </div>
 </body>
