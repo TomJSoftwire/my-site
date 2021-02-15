@@ -7,31 +7,50 @@
     <header>
         <h1>Tom's travelling blog</h1>
     </header>
+    <div class="banner">
+    </div>
     <div id="body-wrapper">
-        <h2>Countries I have visited</h2>
-        <ul>
-            <li>Cuba - <a href="cuba/index.html">see more info here!</a></li>
-            <li>Colombia</li>
-            <li>Ecuador</li>
-        </ul>
-        <h2>This is my face</h2>
-        <img src="assets/me.jpg" alt="My lovely face">
-        <h2>My ranking of the Countries</h2>
-        <table>
-            <th>
-            <td>
-                Country
-            </td>
-            <td>
-                Score
-            </td>
-            <td>
-                Rank
-            </td>
-            <td>
-                Best Pic
-            </td>
-            </th>
+        <div class="row">
+            <div class="content-box row">
+                <div>
+                    <h2>This is my face</h2>
+                    <p>Hi I'm Tom and I like going on holiday to places and then forcing people to read about them and
+                        look at my pictures which they almost certainly don't care about in the slightest LOOK AT ME
+                        LOOK AT ME LOOK AT ME LOOK AT ME</p>
+                </div>
+                <img id="face-pic" src="assets/me.jpg" alt="My lovely face">
+            </div>
+            <div id="countries-visited" class="content-box row">
+                <div id="country-selector">
+                    <h2>Countries I have visited</h2>
+                    <ul>
+                        <li>Cuba</li>
+                        <li>Colombia</li>
+                        <li>Ecuador</li>
+                        <li>Bolivia</li>
+                    </ul>
+                </div>
+                <div id="country-pic">
+                </div>
+            </div>
+        </div>
+        <div class="content-box">
+            <h2>My ranking of the Countries</h2>
+            <table id="country-rank-table">
+                <tr></tr>
+                <th>
+                    Country
+                </th>
+                <th>
+                    Score
+                </th>
+                <th>
+                    Rank
+                </th>
+                <th>
+                    Best Pic
+                </th>
+            </tr>
             <tr>
                 <td>
                     Cuba
@@ -42,32 +61,34 @@
                 <td>
                     1
                 </td>
-                <td>
+                <td class="image-cell">
                     <img src="assets/cuba.svg">
                 </td>
             </tr>
         </table>
+    </div>
+    </div>
         <h2>Contact Me!</h2>
-        <p>I love it when strange weirdos from the internet contact me! Put a message in here and I <em>definitely</em>
-            won't get a restraining order on you!</p>
-        <form action="" method="post">
-            <ul>
-                <li>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name">
-                </li>
-                <li>
-                    <label for="mail">Email:</label>
-                    <input type="email" id="mail">
-                </li>
-                <li>
-                    <label for="msg">What the hell do you want?:</label>
-                    <textarea id="msg" name="creeper_message"></textarea>
-                </li>
-                <li>
-                    <button type="submit"><del>Burn</del> Send your message!</button>
-                </li>
-            </ul>
-        </form>
+    <p>I love it when strange weirdos from the internet contact me! Put a message in here and I <em>definitely</em>
+        won't get a restraining order on you!</p>
+    <form action="" method="post">
+        <ul>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+            </li>
+            <li>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail">
+            </li>
+            <li>
+                <label for="msg">What the hell do you want?:</label>
+                <textarea id="msg" name="creeper_message"></textarea>
+            </li>
+            <li>
+                <button type="submit"><del>Burn</del> Send your message!</button>
+            </li>
+        </ul>
+    </form>
     </div>
 </body>

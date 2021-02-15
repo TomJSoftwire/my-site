@@ -1,0 +1,144 @@
+$primary-color: rgb(49, 231, 207);
+$primary-dark: darken($primary-color, 50%);
+$primary-light: lighten($primary-color, 30%);
+
+* {
+  // border: solid red;
+}
+
+@font-face {
+  font-family: americanTypewriter;
+  src: (url(assets/americantypewriter.ttf));
+}
+
+img {
+  max-width: 100%;
+}
+
+$font-body: Helvetica, Arial, sans-serif;
+
+$style-border: solid black 4px;
+
+p {
+  font-family: $font-body;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  // background-color: $primary-color;
+}
+
+#body-wrapper {
+  width: 80%;
+}
+
+%base-box {
+  margin: 20px;
+  border: $style-border;
+}
+
+header {
+  @extend %base-box;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+header h1 {
+  color: black;
+  // background-color: rgba()
+  font-family: americanTypewriter;
+}
+
+h2 {
+  font-family: americanTypewriter;
+  width: fit-content;
+  // margin: 20px;
+}
+
+.content-box {
+  @extend %base-box;
+  flex-grow: 1;
+  width: auto;
+  padding: 20px;
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+
+  .content-box {
+    width: 0;
+  }
+}
+
+#face-pic {
+  width: 40%;
+  height: auto;
+  // float: right;
+  border:$style-border;
+  margin-left: 20px;
+}
+
+#body-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+#countries-visited {
+height: auto;
+
+  li {
+    width: fit-content;
+    border:$style-border;
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    width:100%;
+    font-family: americanTypewriter;
+    text-align: center;
+    cursor: pointer;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  ul{
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+}
+
+#country-selector {
+  margin-right: 20px;
+}
+
+#country-pic {
+  @extend %base-box;
+  margin: 0;
+  flex-grow: 1;
+  width: 0;
+}
+
+#country-rank-table {
+  width: 100%;
+}
+
+.image-cell {
+  width: 50%;
+}
+
+
