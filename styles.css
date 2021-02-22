@@ -140,11 +140,9 @@ h2 {
 }
 
 #country-pic {
-  margin: 0;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  width: 0;
+  padding: 10px;
+  height: 30vh;
+  width: 20vw;
 }
 
 #country-rank-table {

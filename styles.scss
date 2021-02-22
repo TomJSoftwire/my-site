@@ -2,6 +2,13 @@ $primary-color: rgb(49, 231, 207);
 $primary-dark: darken($primary-color, 50%);
 $primary-light: lighten($primary-color, 30%);
 
+$colombia-image: url(assets/colombia_outline.gif);
+$bolivia-image: url(assets/bolivia_outline.png);
+$cuba-image: url(assets/cuba_outline.gif);
+$ecuador-image: url(assets/ecuador_outline.gif);
+
+$shown-image: $cuba-image;
+
 * {
   // border: solid red;
 }
@@ -87,7 +94,7 @@ h2 {
   width: 40%;
   height: auto;
   // float: right;
-  border:$style-border;
+  border: $style-border;
   margin-left: 20px;
 }
 
@@ -96,17 +103,16 @@ h2 {
   flex-direction: column;
 }
 
-
 #countries-visited {
-height: auto;
+  height: auto;
 
   li {
     width: fit-content;
-    border:$style-border;
+    border: $style-border;
     list-style: none;
     margin-bottom: 10px;
     padding: 5px 0;
-    width:100%;
+    width: 100%;
     font-family: americanTypewriter;
     text-align: center;
     cursor: pointer;
@@ -114,8 +120,8 @@ height: auto;
       margin-bottom: 0;
     }
   }
-  
-  ul{
+
+  ul {
     margin: 0;
     padding: 0;
     height: auto;
@@ -128,9 +134,13 @@ height: auto;
 
 #country-pic {
   @extend %base-box;
-  margin: 0;
-  flex-grow: 1;
-  width: 0;
+  // margin: 0;
+  padding: 10px;
+  // height: 100%;
+  // width: 100%;
+
+  height: 30vh;
+  width: 20vw;
 }
 
 #country-rank-table {
@@ -140,5 +150,3 @@ height: auto;
 .image-cell {
   width: 50%;
 }
-
-
