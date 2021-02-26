@@ -7,13 +7,18 @@ const updateCountryImage = (country) => {
 const countries = document
   .getElementById("country-list")
   .getElementsByTagName("li");
-//const countries = $("#country-list").map((a) =>
-console.log(countries);
 
 for (let country of countries) {
   country.addEventListener("mouseenter", () => {
-    console.log("HOVER");
-    console.log(country.innerText);
     updateCountryImage(country.innerText.toLowerCase());
   });
 }
+
+const getCountryInfo = async (country) => {
+  const countryInfo = await fetch(
+    `https://restcountries.eu/rest/v2/name/${country}`
+  ).then((response) => response.json());
+  console.log(countryInfo[0]);
+};
+
+getCountryInfo("cuba");

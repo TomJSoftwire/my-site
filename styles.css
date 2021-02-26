@@ -90,9 +90,24 @@ h2 {
   width: 0;
 }
 
-#face-pic {
+.img-container {
   width: 40%;
-  height: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 10px;
+}
+
+.container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 50%;
+}
+
+#face-pic {
+  width: 100%;
+  float: right;
   border: solid black 4px;
   margin-left: 20px;
 }
@@ -137,10 +152,12 @@ h2 {
 
 #country-selector {
   margin-right: 20px;
+  min-width: 40%;
 }
 
 #country-pic {
   padding: 10px;
+  max-width: 40%;
   height: 30vh;
   width: 20vw;
 }
@@ -151,5 +168,13 @@ h2 {
 
 .image-cell {
   width: 50%;
+}
+
+.table-image {
+  height: 10vh;
+}
+
+td {
+  margin: auto;
 }
 /*# sourceMappingURL=styles.css.map */

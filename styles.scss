@@ -90,10 +90,22 @@ h2 {
   }
 }
 
-#face-pic {
+.img-container {
   width: 40%;
-  height: auto;
-  // float: right;
+  flex-grow: 1;
+  padding: 10px;
+  // padding-top: 100%;
+}
+.container {
+  flex-grow: 1;
+  width: 50%;
+}
+
+#face-pic {
+  width: 100%;
+  // height: 100%;
+  // height: auto;
+  float: right;
   border: $style-border;
   margin-left: 20px;
 }
@@ -130,6 +142,7 @@ h2 {
 
 #country-selector {
   margin-right: 20px;
+  min-width: 40%;
 }
 
 #country-pic {
@@ -137,7 +150,7 @@ h2 {
   // margin: 0;
   padding: 10px;
   // height: 100%;
-  // width: 100%;
+  max-width: 40%;
 
   height: 30vh;
   width: 20vw;
@@ -149,4 +162,13 @@ h2 {
 
 .image-cell {
   width: 50%;
+}
+
+.table-image {
+  height: 10vh;
+}
+
+td {  
+  // display: flex;
+  margin:auto;
 }
