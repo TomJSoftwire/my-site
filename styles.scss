@@ -9,6 +9,10 @@ $ecuador-image: url(assets/ecuador_outline.gif);
 
 $shown-image: $cuba-image;
 
+$desktop: (
+  min-width: 1000px,
+);
+
 * {
   // border: solid red;
 }
@@ -35,11 +39,19 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  font-size: 1.7em;
   // background-color: $primary-color;
+
+  @media #{$desktop} {
+    font-size: 1em;
+  }
 }
 
 #body-wrapper {
-  width: 80%;
+  width: 100%;
+  @media #{$desktop} {
+    width: 80%;
+  }
 }
 
 %base-box {
@@ -53,9 +65,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15vh;
   width: 100%;
   background-repeat: no-repeat;
+
+  @media #{desktop} {
+    height: 15vh;
+  }
 }
 
 header h1 {
@@ -83,10 +98,13 @@ h2 {
 
 .row {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-
+  flex-wrap: none;
   .content-box {
-    width: 0;
+    @media #{$desktop} {
+      width: 0;
+    }
   }
 }
 
@@ -117,6 +135,9 @@ h2 {
 
 #countries-visited {
   height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
   li {
     width: fit-content;
@@ -142,7 +163,7 @@ h2 {
 
 #country-selector {
   margin-right: 20px;
-  min-width: 40%;
+  width: 40%;
 }
 
 #country-pic {
@@ -151,9 +172,10 @@ h2 {
   padding: 10px;
   // height: 100%;
   max-width: 40%;
-
-  height: 30vh;
-  width: 20vw;
+  @media #{$desktop} {
+    height: 30vh;
+    width: 20vw;
+  }
 }
 
 #country-rank-table {
@@ -168,7 +190,7 @@ h2 {
   height: 10vh;
 }
 
-td {  
+td {
   // display: flex;
-  margin:auto;
+  margin: auto;
 }

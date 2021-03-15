@@ -11,8 +11,19 @@ const countries = document
 for (let country of countries) {
   country.addEventListener("mouseenter", () => {
     updateCountryImage(country.innerText.toLowerCase());
+    for(let item of countries) {
+      if (item.innerText === country.innerText) {
+        item.classList = "active"
+        console.log("applied to "+ country.innerText)
+      } else {
+        console.log("cleared "+ country.innerText)
+        item.classList = ""
+      }
+    };
   });
 }
+
+
 
 const getCountryInfo = async (country) => {
   const countryInfo = await fetch(

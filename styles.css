@@ -25,10 +25,23 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 1.7em;
+}
+
+@media (min-width: 1000px) {
+  body {
+    font-size: 1em;
+  }
 }
 
 #body-wrapper {
-  width: 80%;
+  width: 100%;
+}
+
+@media (min-width: 1000px) {
+  #body-wrapper {
+    width: 80%;
+  }
 }
 
 header, .content-box, #country-pic {
@@ -47,9 +60,14 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 15vh;
   width: 100%;
   background-repeat: no-repeat;
+}
+
+@media desktop {
+  header {
+    height: 15vh;
+  }
 }
 
 header h1 {
@@ -80,14 +98,20 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: none;
+      flex-wrap: none;
 }
 
-.row .content-box {
-  width: 0;
+@media (min-width: 1000px) {
+  .row .content-box {
+    width: 0;
+  }
 }
 
 .img-container {
@@ -124,6 +148,16 @@ h2 {
 
 #countries-visited {
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #countries-visited li {
@@ -152,14 +186,19 @@ h2 {
 
 #country-selector {
   margin-right: 20px;
-  min-width: 40%;
+  width: 40%;
 }
 
 #country-pic {
   padding: 10px;
   max-width: 40%;
-  height: 30vh;
-  width: 20vw;
+}
+
+@media (min-width: 1000px) {
+  #country-pic {
+    height: 30vh;
+    width: 20vw;
+  }
 }
 
 #country-rank-table {
